@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Lato&family=Poppins&family=Roboto+Serif:opsz@8..144&family=Roboto:wght@400;500&family=Tiro+Gurmukhi&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, #FEB139, #293462);
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    background: #FCFFE7;
+    box-shadow: 1px 1px 5px 1px #293462;
+}
+
+input[type="text"] {
+    height: 70px;
+    width: 100%;
+    padding: 15px 10px;
+    text-align: right;
+    border: none;
+    background: #293462;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+input[type="text"]::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.calc-keys .calc-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-keys .calc-row button {
+    width: 70px;
+    height: 50px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: 400;
+    border: none;
+    border: 1px solid #293462;
+    border-radius: 5px;
+    background-color: #FEB139;
+    border-radius: 5px;
+    box-shadow: -1px 5px 6px 1px lightblue;
+    cursor: pointer;
+}
+
+.calc-keys .calc-row .btn-equal {
+    width: 77.5%;
+    background: #FEB139;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: -1px 1px 6px 1px rgb(21, 36, 41);
+    cursor: pointer;
+}
+
+.calc-keys .calc-row .btn-blue {
+    background: rgb(21, 36, 41);
+    color: white;
+}
+
+.calc-keys .calc-row button:focus {
+    outline: none;
+}
+.calc-keys .calc-row button:active {
+    transform: translate(.1rem);
+    border: none;
+}

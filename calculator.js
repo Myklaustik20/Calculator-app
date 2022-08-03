@@ -7,7 +7,7 @@ let input = [];
 
 Array.from(buttons).forEach((button) => {
     button.addEventListener("click", ()=> {
-        const operator = ["+", "-", "/", "*"];
+        const operators = ["+", "-", "/", "*"];
         if(input[input.length - 1] == "=" && !operators.includes(button.value)){
             result.value = button.value;
         } else {
